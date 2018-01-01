@@ -14,7 +14,7 @@ namespace Chaos.NaCl.Internal.Ed25519Ref10
 
             var blake2bConfig = new Blake2BConfig
             {
-                OutputSizeInBytes = 32
+                OutputSizeInBytes = 64
             };
             var hasher = Blake2B.Create(blake2bConfig);
             hasher.Update(sk, skoffset, 32);

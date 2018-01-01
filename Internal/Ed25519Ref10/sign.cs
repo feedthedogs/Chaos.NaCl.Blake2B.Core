@@ -51,7 +51,7 @@ namespace Chaos.NaCl.Internal.Ed25519Ref10
 			GroupElementP3 R;
             var blake2bConfig = new Blake2BConfig
             {
-                OutputSizeInBytes = 32
+                OutputSizeInBytes = 64
             };
             var hasher = Blake2B.Create(blake2bConfig);
 		    //var hasher = new Sha512();

@@ -139,7 +139,7 @@ namespace Chaos.NaCl
             MontgomeryCurve25519.EdwardsToMontgomeryX(out montgomeryX, ref edwardsY, ref edwardsZ);
             var blake2bConfig = new Blake2BConfig
             {
-                OutputSizeInBytes = 32
+                OutputSizeInBytes = 64
             };
             var hasher = Blake2B.Create(blake2bConfig);
             hasher.Update(privateKey.Array, privateKey.Offset, 32);
